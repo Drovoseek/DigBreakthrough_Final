@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Name="Title"
+             x:Class="EdaVPuti.Views.FoodsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="FoodList" RowHeight="90"
+            ItemsSource="{Binding Foods}"
+                ItemSelected="OpenFood">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="10">
+                                <ContentView HorizontalOptions="Start" VerticalOptions="CenterAndExpand">
+                                    <Image Source="{Binding id, StringFormat='eda{0}.jpg'}" x:Name="FoodLogo" VerticalOptions="Center" HeightRequest="120"/>
+                                </ContentView>
+                                <StackLayout 
+                                    Margin="10, 5, 0, 10"
+                                    Orientation="Vertical"
+                                    HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal"
+                                             WidthRequest="60"
+                                             MinimumWidthRequest="60"
+                                             HorizontalOptions="FillAndExpand">
+                                        <Label Text="{Binding title}" 
+                                           Margin="0, 0, 0, 10"
+                                           d:Text="{Binding .}"
+                                           LineBreakMode="NoWrap" 
+                                           Style="{DynamicResource ListItemTextStyle}" 
+                                           FontAttributes="Bold"
+                                           FontSize="16" />
+                                        <Label Text="{Binding price}" 
+                                               HorizontalOptions="EndAndExpand"
+                                           d:Text="Item descripton"
+                                           LineBreakMode="NoWrap"
+                                           Style="{DynamicResource ListItemDetailTextStyle}"
+                                           TextColor="#8fbb89"
+                                           FontSize="16" />
+                                        <Label Text="₽"
+                                           Style="{DynamicResource ListItemDetailTextStyle}"
+                                               HorizontalOptions="End"
+                                           TextColor="#8fbb89"
+                                           FontSize="16" />
+                                    </StackLayout>
+                                    <Label Text="{Binding description}" 
+                                           Margin="0, 0, 0, 10"
+                                           d:Text="Item descripton"
+                                           LineBreakMode="TailTruncation"
+                                           Style="{DynamicResource ListItemDetailTextStyle}"
+                                           FontSize="14" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Clicked="OpenCart"
+                    BackgroundColor="#ffb933"
+                    Text="Корзина"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

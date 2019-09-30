@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EdaVPuti.Views.LoginPage"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="FillAndExpand"
+            Margin="30,0,30,100">
+            <ContentView VerticalOptions="Start" 
+                     Padding="30, 60, 30, 0">
+                <Image Source="eda_yellow.png" VerticalOptions="Center" HeightRequest="200"/>
+            </ContentView>
+            <Label Text="Введите номер" />
+            <Entry Placeholder="XXXXXXXXXXX"
+                   x:Name="UserNumber" />
+            <Label Text="Пароль" />
+            <Entry Placeholder="XXXXXXXXXXX"
+                   x:Name="Pass"
+                   IsPassword="True"/>
+            <Button Clicked="Login"
+                    BackgroundColor="#ffb933"
+                    Text="Войти"/>
+            <Label x:Name="Error" 
+                   TextColor="Transparent"  
+                   HorizontalOptions="CenterAndExpand"
+                   Text="Номер или пароль введены неверно"/>
+            <Label HorizontalOptions="CenterAndExpand" Margin="10"
+                              TextDecorations="Underline">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Пользовательское соглашение"
+                              TextColor="Blue"
+                              TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://тестсайт.рф" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

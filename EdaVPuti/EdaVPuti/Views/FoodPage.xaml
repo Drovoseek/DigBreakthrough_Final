@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EdaVPuti.Views.FoodPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ContentView VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
+                <Image Source="xamarin_logo.png" x:Name="FoodLogo" VerticalOptions="Center"/>
+            </ContentView>
+            <Label Text="" Margin="30, 10, 30, 0"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   x:Name="FoodTitle" />    
+            <Label Text="Цена" Margin="30, 0, 30, 0"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="Gray"/>
+            <StackLayout Orientation="Horizontal" Margin="30, 0, 30, 10">
+                <Label Text="" 
+                       FontSize="30"
+                       TextColor="#8fbb89"
+                       x:Name="FoodPrice" />
+                <Label Text="₽"
+                       TextColor="#8fbb89"
+                       FontSize="30"/>
+            </StackLayout>
+            <Label BackgroundColor="#1a1a1a" HeightRequest="1" Margin="30, 0, 30, 0"/>
+            <Label Text="Описание" Margin="30, 0, 30, 0"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="Gray"/>
+            <Label Text="" Margin="30, 0, 30, 0"
+                   TextColor="Gray"
+                   FontSize="16"
+                   x:Name="FoodDescription" />
+            <Button Clicked="AddToCart"
+                    VerticalOptions="EndAndExpand"
+                    BackgroundColor="#ffb933"
+                    Text="Добавить в корзину"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

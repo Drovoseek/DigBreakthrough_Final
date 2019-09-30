@@ -20,9 +20,9 @@ namespace EdaVPuti.Views
 
             menuItems = new List<HomeMenuItem>
             {
-                new HomeMenuItem {Id = MenuItemType.EnterTicketPage, Title="Главная" },
-                new HomeMenuItem {Id = MenuItemType.About, Title="Профиль" },
-                new HomeMenuItem {Id = MenuItemType.Cart, Title="Корзина" }
+                new HomeMenuItem {Id = MenuItemType.EnterTicketPage, Title="Main" },
+                new HomeMenuItem {Id = MenuItemType.About, Title="Profile" },
+                new HomeMenuItem {Id = MenuItemType.Cart, Title="ShopCart" }
             };
 
             ListViewMenu.ItemsSource = menuItems;

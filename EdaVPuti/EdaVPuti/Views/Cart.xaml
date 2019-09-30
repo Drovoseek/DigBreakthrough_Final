@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="EdaVPuti.Views.Cart"
-             Title="Корзина">
+             Title="ShopCart">
     <ContentPage.Content>
         <StackLayout>
             <ListView x:Name="CartView" RowHeight="90"
@@ -71,7 +71,7 @@
             </ListView>
             <StackLayout Orientation="Horizontal"
                          Padding="10, 5, 10, 5">
-                <Label Text="Итого" 
+                <Label Text="Total" 
                        HorizontalOptions="CenterAndExpand"
                        FontSize="26"/>
                 <Label x:Name="Total"
@@ -81,7 +81,7 @@
                        FontSize="26"
                        HorizontalOptions="End"/>
             </StackLayout>
-            <Button Text="Оплатить"
+            <Button Text="Buy"
                     BackgroundColor="#ffb933"
                     Clicked="Pay"/>
         </StackLayout>

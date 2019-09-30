@@ -52,7 +52,7 @@ namespace EdaVPuti.Views
         {
             CartView.ItemsSource = null;
             AppSettings.AddOrUpdateValue("Cart", string.Empty);
-            await DisplayAlert("Успешно!", "Оплата прошла успешно. Ожидайте заказа в выбранном месте.", "OK");
+            await DisplayAlert("Success!", "Payment successful. Await for your order in choosen location", "OK");
         }
 
 

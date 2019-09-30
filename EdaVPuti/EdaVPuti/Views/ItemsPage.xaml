@@ -12,7 +12,7 @@
         <StackLayout 
             Orientation="Horizontal"
             Margin="15">
-            <Label Text="Ваш билет:"/>
+            <Label Text="Your ticket:"/>
             <Label 
             x:Name="Ticket" 
             Text=""/>

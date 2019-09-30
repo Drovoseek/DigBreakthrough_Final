@@ -14,7 +14,7 @@
                    FontSize="30"
                    FontAttributes="Bold"
                    x:Name="FoodTitle" />    
-            <Label Text="Цена" Margin="30, 0, 30, 0"
+            <Label Text="Price" Margin="30, 0, 30, 0"
                    FontSize="16"
                    FontAttributes="Bold"
                    TextColor="Gray"/>
@@ -28,7 +28,7 @@
                        FontSize="30"/>
             </StackLayout>
             <Label BackgroundColor="#1a1a1a" HeightRequest="1" Margin="30, 0, 30, 0"/>
-            <Label Text="Описание" Margin="30, 0, 30, 0"
+            <Label Text="Description" Margin="30, 0, 30, 0"
                    FontSize="16"
                    FontAttributes="Bold"
                    TextColor="Gray"/>
@@ -39,7 +39,7 @@
             <Button Clicked="AddToCart"
                     VerticalOptions="EndAndExpand"
                     BackgroundColor="#ffb933"
-                    Text="Добавить в корзину"/>
+                    Text="Add to shopcart"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

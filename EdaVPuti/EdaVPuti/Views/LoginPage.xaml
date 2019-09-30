@@ -15,25 +15,25 @@
                      Padding="30, 60, 30, 0">
                 <Image Source="eda_yellow.png" VerticalOptions="Center" HeightRequest="200"/>
             </ContentView>
-            <Label Text="Введите номер" />
+            <Label Text="Phone number" />
             <Entry Placeholder="XXXXXXXXXXX"
                    x:Name="UserNumber" />
-            <Label Text="Пароль" />
+            <Label Text="Password" />
             <Entry Placeholder="XXXXXXXXXXX"
                    x:Name="Pass"
                    IsPassword="True"/>
             <Button Clicked="Login"
                     BackgroundColor="#ffb933"
-                    Text="Войти"/>
+                    Text="Login"/>
             <Label x:Name="Error" 
                    TextColor="Transparent"  
                    HorizontalOptions="CenterAndExpand"
-                   Text="Номер или пароль введены неверно"/>
+                   Text="Incorrect phone number or password"/>
             <Label HorizontalOptions="CenterAndExpand" Margin="10"
                               TextDecorations="Underline">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="Пользовательское соглашение"
+                        <Span Text="User agreement"
                               TextColor="Blue"
                               TextDecorations="Underline">
                             <Span.GestureRecognizers>

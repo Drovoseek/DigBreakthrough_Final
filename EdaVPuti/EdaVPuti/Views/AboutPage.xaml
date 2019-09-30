@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="EdaVPuti.Views.AboutPage"
              xmlns:vm="clr-namespace:EdaVPuti.ViewModels"
-             Title="Профиль">
+             Title="Profile">
     
     <ContentPage.BindingContext>
         <vm:AboutViewModel />

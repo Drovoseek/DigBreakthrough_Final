@@ -15,9 +15,9 @@ namespace EdaVPuti.Services
             items = new List<Item>();
             var mockItems = new List<Item>
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Ульяновск", Description="10 мин" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Мухосранск", Description="33 мин" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Курган", Description="16 мин" }
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Uljanovsk", Description="10 min" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Muhosransk", Description="33 min" },
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Kurgan", Description="16 min" }
             };
 
             foreach (var item in mockItems)

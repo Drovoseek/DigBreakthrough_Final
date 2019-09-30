@@ -60,7 +60,7 @@
             </ListView>
             <Button Clicked="OpenCart"
                     BackgroundColor="#ffb933"
-                    Text="Корзина"/>
+                    Text="ShopCart"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -12,12 +12,12 @@
                 <Image Source="ticket.png"
                        HeightRequest="200"/>
             </ContentView>
-            <Label Text="Номер билета" Margin="5, 0, 0, 0" />
+            <Label Text="Ticket number" Margin="5, 0, 0, 0" />
             <Entry Placeholder="XXXXXXXXXXXXXX"
                    x:Name="Ticket"/>
             <Button Clicked="EnterTicketNumber"
                     BackgroundColor="#ffb933"
-                    Text="Ввести"/>
+                    Text="Enter"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -61,11 +61,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="It shares code with its" />
-                                <Span Text=" " />
-                                <Span Text="iOS, Android, and Windows" FontAttributes="Bold" />
-                                <Span Text=" " />
-                                <Span Text="versions." />
+                                <Span Text="Our app is tha best anyways. The others are pussies and we are D'Artagnans" />
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
